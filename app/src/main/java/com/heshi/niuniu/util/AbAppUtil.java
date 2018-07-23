@@ -76,7 +76,7 @@ public class AbAppUtil {
 		context.startActivity(intent);
 	}
 
-
+	//	这是一行测试提交的注释
 
 	/**
 	 * 描述：卸载程序.
