@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/title_bar"
+    style="@style/toolBarStyle"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/comm_topBarSteep"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_333333" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/t_title"
+        style="@style/toolBarStyle"
+        tl:layout_scrollFlags="scroll|enterAlways">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorMain"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/view_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/color_333333"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/tv_back"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:background="@color/color_333333"
+                    tl:srcCompat="@drawable/icon_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_back"
+                    android:background="@color/color_333333"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_add_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@color/color_333333"
+                android:gravity="center"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:text="取消"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/colorMain"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+
+            <ImageView
+                android:id="@+id/img_add_right"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:background="@color/color_333333"
+                android:visibility="invisible"
+                tl:srcCompat="@drawable/icon_add" />
+
+            <TextView
+                android:id="@+id/text_add_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/color_999999"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

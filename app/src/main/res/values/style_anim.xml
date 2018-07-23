@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popwin_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/popwin_hide_anim</item>
+    </style>
+
+</resources>

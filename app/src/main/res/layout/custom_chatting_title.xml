@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/comm_topBarSteep"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_333333" />
+
+
+    <RelativeLayout
+        android:id="@+id/custom_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorMain"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/color_333333"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/tv_back"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:background="@color/color_333333"
+                android:src="@drawable/icon_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_back"
+                android:background="@color/color_333333"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="middle"
+            android:maxWidth="200dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/title_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/aliwx_title_bar_height"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/aliwx_column_up_unit_margin"
+            android:scaleType="center" />
+
+        <RelativeLayout
+            android:id="@+id/aliwx_at_content"
+            android:layout_width="@dimen/aliwx_title_bar_height"
+            android:layout_height="@dimen/aliwx_title_bar_height"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/title_button"
+            android:visibility="gone">
+            <!--这里包一层的原因是在Android 5.1上alignTop无效,所以改为alignParentTop-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/aliwx_at_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/aliwx_tribe_at_icon"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/aliwx_at_msg_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/aliwx_at_image"
+                    android:src="@drawable/aliwx_topbar_at_icon_new"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

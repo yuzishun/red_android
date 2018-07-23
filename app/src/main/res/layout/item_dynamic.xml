@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_item_dynamic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_img_error" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_item_dynamic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名称"
+                android:textColor="@color/color_6A7D95"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_item_dynamic_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="天天给自己一个笑脸"
+                android:textSize="15sp" />
+
+            <com.lzy.ninegrid.NineGridView
+                android:id="@+id/nineGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:paddingRight="5dp"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:id="@+id/img_dynamic_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海星巴克"
+                android:textColor="@color/color_6A7D95"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/text_dynamic_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="1分钟前"
+                    android:textColor="@color/color_8E8E92"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/text_dynamic_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/text_dynamic_time"
+                    android:text="删除"
+                    android:textColor="@color/color_6A7D95"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/text_dynamic_comment"
+                    android:layout_width="19dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/icon_dynamic_comment" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/view_dynamic_zan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/event_di"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    app:srcCompat="@drawable/icon_dynamic_heart" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_dynamic_zan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

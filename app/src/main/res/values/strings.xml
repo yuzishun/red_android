@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">阿信</string>
+    <string name="the_memory_card_was_not_found">未找到存储卡，无法存储照片！</string>
+
+</resources>

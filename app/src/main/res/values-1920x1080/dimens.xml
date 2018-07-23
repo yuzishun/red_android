@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+  <!--  <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="line">0.5dp</dimen>
+    <dimen name="h9">9.0sp</dimen>
+    <dimen name="h10">10.0sp</dimen>
+    <dimen name="h11">11.0sp</dimen>
+    <dimen name="h12">12.0sp</dimen>
+    <dimen name="h13">13.0sp</dimen>
+    <dimen name="h14">14.0sp</dimen>
+    <dimen name="h15">15.0sp</dimen>
+    <dimen name="h16">16.0sp</dimen>
+    <dimen name="h17">17.0sp</dimen>
+    <dimen name="h18">18.0sp</dimen>
+    <dimen name="h19">19.0sp</dimen>
+    <dimen name="h20">20.0sp</dimen>
+    <dimen name="h25">25.0sp</dimen>
+    <dimen name="h30">30.0sp</dimen>
+    <dimen name="h22">22.0sp</dimen>
+    <dimen name="h23">23.0sp</dimen>
+    <dimen name="h35">35.0sp</dimen>
+    <dimen name="h90">90.0sp</dimen>
+    <dimen name="h1">1px</dimen>-->
+  <!--  <dimen name="contact_detail_icon">60dp</dimen>
+    <dimen name="contact_detail_person_info_height">140dp</dimen>
+    <dimen name="contact__detail_bg_bottom">100dp</dimen>
+    <dimen name="contact_detail_bg_top">15dp</dimen>
+    <dimen name="contact_detail_name_top">20dp</dimen>
+    <dimen name="contact_detail_icon_name_bottom">20dp</dimen>
+    <dimen name="contact_detail_icon_name_top">30dp</dimen>
+    <dimen name="contact_detail_name_width">60dp</dimen>-->
+
+    <dimen name="frg_work_item_width">102dp</dimen>
+    <dimen name="frg_work_item_higth">92dp</dimen>
+    <dimen name="frg_work_icon_width">47dp</dimen>
+    <dimen name="frg_work_icon_height">47dp</dimen>
+    <dimen name="frg_work_name_width">9dp</dimen>
+    <dimen name="frg_work_name_height">7dp</dimen>
+</resources>
